@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso al PDF</title>
+    <script>
+        function checkPin() {
+            var pin = document.getElementById("pin").value;
+            if (pin === "1234") {  // Cambia "4834" al PIN que desees
+                window.location.href = "https://drive.google.com/file/d/1Y7Ll2Vva_cj3F1YUZXfYs9iTcsdrXfqI/view?usp=drive_link";  // Cambia esto por el enlace del PDF
+            } else {
+                alert("Código incorrecto. Inténtalo de nuevo.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Ingresa el código de acceso</h2>
+    <input type="text" id="pin" maxlength="4" placeholder="Código de 4 dígitos">
+    <button onclick="checkPin()">Acceder</button>
+</body>
+</html>
